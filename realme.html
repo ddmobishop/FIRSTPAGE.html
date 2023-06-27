@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>e-comercial</e-comercial></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='R.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <img class="imglogo" src="weblogo.jpg">
+      <h1 class="mobi">mobi</h1>
+      <h2 class="shop">shop</h2>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li  id="home" onclick="home()"><a onclick="home()">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li id="cart"><i class='fa fa-shopping-cart'></i></li>
+
+      </div>
+    </ul>
+  </nav>
+    <section class="mobile">
+
+      <div class="leftsec">
+        <img class="img" src="realme 8.jpg" >
+        <img class="img" src="realme gt.jpg" >
+        <img class="img" src="realme gt neo2.jpg" >
+        <img class="img" id="fourimg" src="realme 11pro.jpg" >
+      </div>
+      <div class="rightsec"> 
+
+        <div class="details">
+          <h1 class="name"> realme 8 (Punk Black) </h1>
+          <h1 class="ab" font-family:verdana>
+
+            <br> > 4 GB RAM | 128 GB ROM
+            <br> > 16.26 cm (6.4 inch) Full HD+ Display
+            <br> > 64MP + 8MP + 2MP + 2MP | 16MP Front Camera
+            <br> > MediaTek Helio G95 Processor
+          </h1>
+          <button onclick="login()" class="btn1">BUY NOW</button>
+          <button onclick="login()" class="btn2">ADD TO CARD</button>
+          </div>
+
+          
+          <div class="details">
+            <h1 class="name"> realme GT 5G (Dashing Blue) </h1>
+            <h1 class="ab" font-family:verdana>
+
+                <br> > 8 GB RAM | 128 GB ROM
+                <br> > 16.33 cm (6.43 inch) Full HD+ Display
+                <br> > 64MP + 8MP + 2MP | 16MP Front Camera 
+                <br> > Qualcomm Snapdragon 888 Processor
+              
+          </h1>
+            <button onclick="login()" class="btn1">BUY NOW</button>
+            <button onclick="login()" class="btn2">ADD TO CARD</button>
+          </div>
+          
+          <div class="details">
+            <h1 class="name"> realme GT NEO 2 (NEO Blue)</h1>
+            <h1 class="ab" font-family:verdana>
+
+              <br> > 12 GB RAM | 256 GB ROM
+              <br> > 16.81 cm (6.62 inch) Full HD+ Display
+              <br> > 64MP + 8MP + 2MP | 16MP Front Camera
+              <br> > 5000 mAh Battery
+          </h1>
+            <button onclick="login()" class="btn1">BUY NOW</button>
+            <button onclick="login()" class="btn2">ADD TO CARD</button>
+          </div>
+          
+          <div class="details">
+            <h1 class="name"> realme 11 Pro 5G (Sunrise Beige)</h1>
+            <h1 class="ab" font-family:verdana>
+               
+              <br> > 8GB RAM | 256GB ROM
+              <br> > 120 Hz Curved Display 
+              <br> > 100MP Prolight Camera
+              <br> > 7050 5G Dimensity | 12GB Dynamic RAM </h1>
+
+        </h1>
+          <button   onclick="login()" class="btn1">BUY NOW</button>
+            <button onclick="login()" class="btn2">ADD TO CARD</button>
+        </div>
+
+        </div> 
+      </div>
+
+      
+    </section>
+    <script>
+      function home(){
+            window.location.href = "index.html"
+        }
+        function login(){
+            window.location.href = "login.html"
+        }
+    </script>
+</body>
+</html>
