@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(13, 14, 14);
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+  }
+  
+  /* LOGO */
+  .logo {
+    display: flex;
+    font-size: 22px;
+    font-family: Montserrat, sans-serif;
+    align-items: end;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #eba52b;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+  
+  /* DROPDOWN MENU */
+  .services {
+    position: relative; 
+  }
+  
+  .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown{
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  .dropdown li:hover {
+    background-color: #eba52b;
+  }
+  
+  .services:hover .dropdown {
+    display: block;
+  }
+.imglogo{
+    display: flex;
+    height: 40px;
+    width: auto;
+    border-radius: 15px;
+}
+.mobi{
+    padding: 0px 5px;
+}
+.shop{
+    color: #f59d44;
+}
+
+.mobile{
+  display: flex;
+  width: 100%;
+}
+.leftsec{
+  max-width: 28%;
+  min-width: none;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+.img{
+  max-height: 50%;
+  min-height: 5%;
+  width: 100%;
+  margin-top: 13%;
+  max-width: 300px;
+}
+.rightsec{
+  width: 60%;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+
+}
+.details{
+  margin-top: 15%;
+  height: 18%;
+  width: 80%;
+  justify-content: center;
+}
+.name{
+  font-size: 35px;
+}
+.btn1{
+  font-weight: bold;
+  height: 15%;
+  width: 25%;
+  margin-top: 5%;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 136, 0);
+  transition: 0.4s ease;
+  box-shadow: 5px 10px 18px #929292;
+}
+.btn1:hover{
+  color: rgb(255, 153, 0);
+  background: white;
+}
+.btn2{
+  font-weight: bold;
+  height: 15%;
+  width: 25%;
+  margin-left: 5%;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: aliceblue;
+  background: rgb(255, 180, 42);
+  transition: 0.4s ease;
+  box-shadow: 5px 10px 18px #929292;
+}
+.btn2:hover{
+  color: rgb(255, 186, 59);
+  background: white;
+}
+@media (min-width: 200px) and (max-width:900px){
+  .ab{
+    font-size: 10px;
+  }
+  .btn1{
+    height: 18%;
+    width: 23%;
+    font-size: 10px;
+  }
+  .btn2{
+    height: 18%;
+    width: 28%;
+    font-size: 10px;
+  }
+  .name{
+    font-size: 15px;
+  }
+  .details{
+    margin-left: 20px;
+  }
+  
+  .nav-list li p{
+    font-size: 25px;
+  }
+}
+@media (min-width: 820px) and (max-width:1180px){
+  .btn1{
+    font-size: 10px;
+    height: 15%;
+  }
+  .btn2{
+    font-size: 10px;
+    height: 15%;
+  }
+  .details{
+    margin-top: 20%;
+  }
+
+}
+@media (max-width: 540px) and (min-width: 100px){
+  .btn1{
+    font-size: 6px;
+  }
+  .btn2{
+    font-size: 6px;
+  }
+}
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+ .menu {
+    display: none;
+    position: absolute;
+    background-color:teal;
+    margin-top: 20px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+
+  .menu li:hover {
+    display: none;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 3px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  
+}
